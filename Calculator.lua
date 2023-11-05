@@ -12,13 +12,13 @@
 	io.write("Enter the amount of feed(s):",'\n')								-- this prompts to input the amount of inputs to do calculation
 	numberOfInput = io.read()
 	x = numberOfInput															-- x is the variable that iterates. numberOfInput is the turns of inputs. when it equals to x, end user can decide his / her own limit of values to enter. 
-for i = 1, x, 1 do																-- this loop goes until user's value gets equals to the variable x
+	for i = 1, x, 1 do																-- this loop goes until user's value gets equals to the variable x
 	io.write('\n', "enter the number: ")
 	inputs = io.read()															-- this variable is used to store the inputs from the user 
 	ansForAdd = ansForAdd + inputs 												-- after user's input, it stores into the variable sum and, then, that value adds to the sum again.
 	end
 	io.write('\n', "The answer for your addition operation is:", '\n' , ansForAdd, '\n')	
-end
+	end
 
 	local function subtraction()
 	local ansForSub, value1, value2 = 0
@@ -28,7 +28,7 @@ end
 	value2 = io.read()
 	ansForSub = value1 - value2	
 	io.write('\n', "The answer for your subtraction operation is:", '\n' , ansForSub, '\n')				
-end
+	end
 
 	local function multiplication()
 	local ansForMul, value1, value2 = 0
@@ -38,7 +38,7 @@ end
 	value2 = io.read()
 	ansForMul = value1 * value2
 	io.write('\n', tab, "The answer for your multiplication operation is:", '\n', ansForMul, '\n')
-end
+	end
 
 	local function division()
 	local ansForDiv, value1, value2 = 0
@@ -48,7 +48,7 @@ end
 	value2 = io.read()
 	ansForDiv = value1 / value2
 	io.write('\n', "The answer for your division operation is:", '\n', ansForDiv, '\n')
-end
+	end
 
 			--Main program
 	io.write('\n',tab , "Welcome to My Calculator", '\n')						
@@ -87,7 +87,7 @@ end
 	else
 		print(tab, "The program can not understand the procedure.")		
 	end
-  end
+  	end
 
 
 
